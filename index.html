@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Unique Car Supplies</Title>
+    <link rel="stylesheet" href="css/style.css"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    
+    <div class="header">    
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="logo.png" width="200px">
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Log In</a></li>
+          </ul>
+          
+        </nav>
+        <img src="cart.png" width="30px" height="30px">
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        
+      </div>  
+      <div class="row">
+        <div class="col-2">
+          <h1>Give Your Car <br>A Unique Style!</h1>
+          <p>“In order to be irreplaceable one must<br> always be different.” - Coco Chanel</p>
+          <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+          <img src="lambo.png"
+          
+        </div>
+      </div>
+      </div> 
+    </div>
+    
+    
+   <!------- featured Categories -------->
+   <div class="categories">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+           <img src="pink.jpg">
+        </div>
+        <div class="col-3">
+           <img src="pink honda.jpg" height="310">
+        </div>
+        <div class="col-3">
+           <img src="pink rims.jpeg" width="310" height="310">
+        </div>
+      </div>
+    </div>
+     
+   </div>
+   <!------- Featured products ----->
+   <div class="small-container">
+     <h2 class="title">Featured Products</h2>
+     <div class="row">
+       <div class="col-4">
+         <img src="product 1.jpg" height="200">
+         <H4>2018 Honda Civic Spoiler</H4>
+         <div class="rating">
+          <i class="fa fa-star"></i> 
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>  
+          <i class="fa fa-star-half-o"></i>   
+        </div>
+         <p>$160.00</p>
+       </div>
+       <div class="col-4">
+        <img src="rain guard.jpeg" height="200">
+        <H4>Rain Guards</H4>
+        <div class="rating">
+         <i class="fa fa-star"></i> 
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>         
+         <i class="fa fa-star-half-o"></i>   
+         <i class="fa fa-star-o"></i>
+       </div>
+        <p>$120.00</p>
+      </div>
+      <div class="col-4">
+        <img src="car lights.jpg" height="200">
+        <H4>Interior Car Lights</H4>
+        <div class="rating">
+         <i class="fa fa-star"></i> 
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>  
+         <i class="fa fa-star-o"></i>  
+       </div>
+        <p>$60.00</p>
+      </div>
+      <div class="col-4">
+        <img src="rim protecter.jpg" height="200">
+        <H4>Rim Protector</H4>
+        <div class="rating">
+         <i class="fa fa-star"></i> 
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>  
+         <i class="fa fa-star"></i>     
+       </div>
+        <p>$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="emblem.jpg" height="200">
+        <H4>Honda Emblems</H4>
+        <div class="rating">
+         <i class="fa fa-star"></i> 
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>  
+         <i class="fa fa-star-o"></i>     
+       </div>
+        <p>$80.00</p>
+      </div>       
+     </div>     
+   </div>
+   <!--------footer-------->
+   <div class="footer">
+     <div class="container">
+       <div class="row">
+         <div class="footer-col-1">
+           <h3>Download our App Today!</h3>
+           <p>Download App for Android or IOS.</p>
+           <div class="app-logo">
+             <img src="google-play-and-apple-app-store-logos-22.png">             
+           </div>
+         </div>
+         <div class="footer-col-2">
+          <img src="Untitled-3.png">
+          <p>Don’t dream it. Drive it!.</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Locations</li>
+            <li>Contact Us</li>
+            <li>Return Policy</li>
+            <li>Memberships</li>
+          </ul>          
+        </div>
+        <div class="footer-col-3">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+          </ul>          
+        </div>
+       </div>
+       <hr>
+       <p class="copyright">Copyright 2020</p>
+     </div>
+   </div>
+   <!----------js for toggle menu-------->
+   <script>
+     var MenuItems = document.getElementById("MenuItems");
+
+     MenuItems.style.maxHeight = "0px";
+
+     function menutoggle(){
+       if(MenuItems.style.maxHeight == "0px")
+       {
+        MenuItems.style.maxHeight = "200px";
+       }
+       else
+       {
+        MenuItems.style.maxHeight = "0px";
+       }
+      }
+   </script>
+
+   
+
+ 
+    
+
+  </body>
+</html>
