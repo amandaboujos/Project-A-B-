@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 *{
 	margin: 0;
 	padding: 0;
@@ -5,6 +6,7 @@
 }
 
 body{
+	background: radial-gradient(#fff,  rgb(76, 182, 218));
 	font-family: 'Poppins', sans-serif;
 }
 .navbar{
@@ -69,9 +71,7 @@ col-2 h1{
 .btn:hover{
 	background: #563434;
 }
-.header{
-	background: radial-gradient(#fff,  lightblue);
-}
+
 .header .row{
 	margin-top: 70px;
 }
@@ -191,7 +191,7 @@ ul{
 }
 
 
-@media only screen and (max-width: 639px){
+@media only screen and (max-width: 600px){
 	nav ul{
 		position: absolute;
 		top: 110px;
