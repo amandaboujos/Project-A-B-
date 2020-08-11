@@ -1,9 +1,14 @@
+*, *::before, *::after {
+	box-sizing: inherit;
+}
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
+html {
+	box-sizing: border-box;
+}
 body{
 	font-family: 'Poppins', sans-serif;
 }
@@ -37,7 +42,7 @@ p{
 	padding-left: 25px;
 	padding-right: 25px;
 }
-.row{
+.discription{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -56,7 +61,7 @@ col-2 h1{
 	line-height: 60px;
 	margin: 25px 0;
 }
-.btn{
+.button{
 	display: inline-block;
 	background: rgb(241, 52, 115);
 	color: white;
@@ -66,7 +71,7 @@ col-2 h1{
 	transition: background 0.5s;
 }
 
-.btn:hover{
+.button:hover{
 	background: #563434;
 }
 .header{
@@ -135,7 +140,7 @@ h4{
 	transform: translateY(-5px);
 }
 
-/*-------------footer---------*/
+
 .footer{
 	background: black;
 	color: white;
@@ -190,7 +195,7 @@ ul{
 	width: 20px;
 	margin-left: 20px;	
 }
-/*--------- media query for menu ---------*/
+
 
 @media only screen and (max-width: 800px){
 	nav ul{
@@ -217,8 +222,7 @@ ul{
 	}
 }
 
-/*Media Query for less then 600 screen size*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 500px){
 	.row{
 		text-align: center;
 	}
